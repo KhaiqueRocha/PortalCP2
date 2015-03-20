@@ -1,6 +1,6 @@
-/*-----------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  CSS Reset & Clear
-/*-----------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 html, body, div, span, figure, h1, h2, h3, h4, p, a, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, details, figure, figcaption, footer, header, hgroup, nav, section, img { margin: 0; padding: 0; border: 0; vertical-align: baseline; font: inherit; font-size: 100%; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
