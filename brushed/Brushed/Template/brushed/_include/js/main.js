@@ -59,7 +59,7 @@ BRUSHED.slider = function(){
 		transition_speed		:	300,		// Speed of transition
 		new_window				:	1,			// Image links open in new window/tab
 		pause_hover             :   0,			// Pause slideshow on hover
-		keyboard_nav            :   1,			// Keyboard navigation on/off
+		keyboard_nav            :   0,			// Keyboard navigation on/off
 		performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
 		image_protect			:	1,			// Disables image dragging and right click with Javascript
 												   
