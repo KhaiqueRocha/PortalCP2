@@ -336,7 +336,6 @@ h3.spec {
 #home-slider .control-nav {
 	position: absolute;
 	width: 100%;
-	background: #E9E9E9;
 	height: 50px;
 	bottom: 0;
 	z-index: 2;
@@ -345,7 +344,7 @@ h3.spec {
 #home-slider #nextslide,
 #home-slider #prevslide {
 	background-image: none;
-	background-color: #26292E;
+	/*background-color: #26292E;*/
 	display: inline-block;
 	margin: 0;
 	position: relative;
@@ -373,16 +372,16 @@ h3.spec {
 
 #home-slider #nextslide:hover,
 #home-slider #prevslide:hover {
-	background-color:#DE5E60;
+	background-color:#3299BB;
 }
 
 #home-slider #nextslide i,
 #home-slider #prevslide i {
-	font-size: 16px;
+	font-size:  25px;
 	color: #FFFFFF;
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left: 45%;
+	top: 45%;
 	margin-top: -7px;
 	line-height: 1em;
 }
@@ -410,7 +409,7 @@ h3.spec {
 }
 
 #home-slider ul#slide-list li a {
-	background-color: #424242;
+	background-color: #E9E9E9;
 	background-image: none;
 	width: 12px;
 	height: 12px;
@@ -435,7 +434,7 @@ h3.spec {
 }
 
 #home-slider #nextsection {
-	background-color: #26292E;
+	/*background-color: #26292E;*/
 	margin: 0;
 	position: relative;
 	float:right;
@@ -453,11 +452,11 @@ h3.spec {
 }
 
 #home-slider #nextsection i {
-	font-size: 16px;
+	font-size: 25px;
 	color: #FFFFFF;
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left: 40%;
+	top: 45%;
 	margin-top: -7px;
 	line-height: 1em;
 }
@@ -543,17 +542,18 @@ nav#menu #menu-nav li:first-child {
 }
 
 nav#menu #menu-nav li a {
-	color: #FFFFFF;
+	color: #E9E9E9;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 60px;
 	display: block;
 	text-transform: uppercase;
+    font-weight: bold;
 }
 
 nav#menu #menu-nav li.current a,
 nav#menu #menu-nav li a:hover {
-	color: #DE5E60;
+	color: #3299BB;
 }
 
 
@@ -662,7 +662,7 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 .type-work {
-	color: #FFFFFF;
+	color: #424242;
 	font-size: 24px;
 	font-weight: 300;
 	margin-bottom: 30px;
@@ -692,7 +692,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .work-nav #filters li a.selected {
-	color: #DE5E60;
+	color: #3299BB;
 }
 
 #thumbs {
@@ -752,7 +752,7 @@ nav#menu #menu-nav li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #DE5E60;
+	background: #3299BB;
 	
 	opacity: 0.80;
 	filter: alpha(opacity=80);
@@ -832,7 +832,7 @@ nav#menu #menu-nav li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #DE5E60;
+	background: #3299BB;
 	
 	opacity: 0.80;
 	filter: alpha(opacity=80);
@@ -934,8 +934,8 @@ nav#menu #menu-nav li a:hover {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	
-	background: #26292E;
-    color: #FFFFFF;
+	background: #BCBCBCS;
+    color: #FF9900;
     font-size: 16px;
     height: auto;
     padding: 15px;
