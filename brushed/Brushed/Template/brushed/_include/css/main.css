@@ -25,7 +25,7 @@ html, hmtl a{
 
 body{
 	background:#2F3238;
-	color:#7F8289;
+	color:#424242;
 	font-weight:300;
 	font-size:16px;
 	font-family: 'Titillium Web', sans-serif;
@@ -34,7 +34,7 @@ body{
 
 
 a{
-	color:#DE5E60;
+	color:#3299BB;
 	text-decoration: none;
 	cursor: pointer;    
 	
@@ -205,20 +205,24 @@ h6{
 	margin:0 0 20px 0;
 	color:#424242;
 	font-weight:300;
+    text-shadow: text-shadow: black 0.1em 0.1em 0.2em;  
 	font-family: 'Titillium Web', sans-serif;
 	line-height:1.5em;
 }
 
 h1{
 	font-size:48px;
+
 }
 
 h2{
 	font-size:36px;
+    color:#FF9900;
 }
 
 h3{
 	font-size:24px;
+    
 }
 
 h4{
@@ -448,7 +452,7 @@ h3.spec {
 }
 
 #home-slider #nextsection:hover {
-	background-color:#DE5E60;
+	background-color:#3299BB;
 }
 
 #home-slider #nextsection i {
@@ -635,7 +639,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .page-alternate {
-	background: #BCBCBC;
+	background: #BDBDBD;
 	padding: 100px 0;
 	position: relative;
 	z-index: 99;
@@ -654,6 +658,7 @@ nav#menu #menu-nav li a:hover {
 .title-page .title-description {
 	font-size: 24px;
 	font-weight: 200;
+    font-weight: bold;
 	margin: 0;
 }
 
@@ -895,7 +900,7 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 .contact-details h3 {
-	color: #FFFFFF;
+	color: #FF9900;
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 30px;
@@ -935,8 +940,9 @@ nav#menu #menu-nav li a:hover {
 	box-shadow: none;
 	
 	background: #BCBCBCS;
-    color: #FF9900;
-    font-size: 16px;
+    color: #424242;
+    font-size: 18px;
+    font-weight: bold;
     height: auto;
     padding: 15px;
 	margin: 0;
@@ -960,12 +966,13 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit {
-    background: #3C3F45;
-    color: #23262C;
+    background: #FF9900;
+    color: #E9E9E9;
     cursor: pointer;
     display: inline-block;
     font-size: 18px;
     font-weight: 500;
+    font-weight: bold;
     padding: 16px 40px;
     text-align: center;
     vertical-align: middle;
@@ -1100,7 +1107,7 @@ nav#menu #menu-nav li a:hover {
 
 #social ul li:hover a,
 #social ul li.active a {
-	background-color: #DE5E60;	
+	background-color: #3299BB;	
 	
 	-webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);
@@ -1149,7 +1156,7 @@ footer .credits {
 
 #back-to-top {
 	display: none;
-	background-color: #3C3F45;
+	background-color: #3299BB;
 	margin: 0;
 	position: fixed;
 	bottom: 0;
@@ -1165,7 +1172,7 @@ footer .credits {
 }
 
 #back-to-top:hover {
-	background-color:#DE5E60;
+	background-color:#3299BB;
 }
 
 #back-to-top i {
@@ -1241,7 +1248,7 @@ footer .credits {
 	margin: -50px 0 0 -50px;
 	width: 100px;
 	height: 100px;
-	background: #DE5E60;
+	background: #FF9900;
 	-webkit-border-radius: 999px;
 	-moz-border-radius: 999px;
 	border-radius: 999px;
