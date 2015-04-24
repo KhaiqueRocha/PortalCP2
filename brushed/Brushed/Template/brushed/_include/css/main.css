@@ -25,7 +25,7 @@ html, hmtl a{
 
 body{
 	background:#2F3238;
-	color:#7F8289;
+	color:#424242;
 	font-weight:300;
 	font-size:16px;
 	font-family: 'Titillium Web', sans-serif;
@@ -34,9 +34,9 @@ body{
 
 
 a{
-	color:#DE5E60;
+	color:#3299BB;
 	text-decoration: none;
-	cursor: pointer;
+	cursor: pointer;    
 	
 	-webkit-transition: color 0.1s linear 0s;	
 	   -moz-transition: color 0.1s linear 0s;
@@ -203,22 +203,26 @@ h4,
 h5,
 h6{
 	margin:0 0 20px 0;
-	color:#FFFFFF;
+	color:#424242;
 	font-weight:300;
+    text-shadow: text-shadow: black 0.1em 0.1em 0.2em;  
 	font-family: 'Titillium Web', sans-serif;
 	line-height:1.5em;
 }
 
 h1{
 	font-size:48px;
+
 }
 
 h2{
 	font-size:36px;
+    color:#FF9900;
 }
 
 h3{
 	font-size:24px;
+    
 }
 
 h4{
@@ -336,7 +340,6 @@ h3.spec {
 #home-slider .control-nav {
 	position: absolute;
 	width: 100%;
-	background: #2F3238;
 	height: 50px;
 	bottom: 0;
 	z-index: 2;
@@ -345,7 +348,7 @@ h3.spec {
 #home-slider #nextslide,
 #home-slider #prevslide {
 	background-image: none;
-	background-color: #26292E;
+	/*background-color: #26292E;*/
 	display: inline-block;
 	margin: 0;
 	position: relative;
@@ -373,16 +376,16 @@ h3.spec {
 
 #home-slider #nextslide:hover,
 #home-slider #prevslide:hover {
-	background-color:#DE5E60;
+	background-color:#3299BB;
 }
 
 #home-slider #nextslide i,
 #home-slider #prevslide i {
-	font-size: 16px;
+	font-size:  25px;
 	color: #FFFFFF;
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left: 45%;
+	top: 45%;
 	margin-top: -7px;
 	line-height: 1em;
 }
@@ -410,7 +413,7 @@ h3.spec {
 }
 
 #home-slider ul#slide-list li a {
-	background-color: #6E7074;
+	background-color: #E9E9E9;
 	background-image: none;
 	width: 12px;
 	height: 12px;
@@ -431,11 +434,11 @@ h3.spec {
 
 #home-slider ul#slide-list li.current-slide a,
 #home-slider ul#slide-list li.current-slide a:hover {
-	background-color:#DE5E60;
+	background-color:#FF9900;
 }
 
 #home-slider #nextsection {
-	background-color: #26292E;
+	/*background-color: #26292E;*/
 	margin: 0;
 	position: relative;
 	float:right;
@@ -449,15 +452,15 @@ h3.spec {
 }
 
 #home-slider #nextsection:hover {
-	background-color:#DE5E60;
+	background-color:#3299BB;
 }
 
 #home-slider #nextsection i {
-	font-size: 16px;
+	font-size: 25px;
 	color: #FFFFFF;
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left: 40%;
+	top: 45%;
 	margin-top: -7px;
 	line-height: 1em;
 }
@@ -480,7 +483,7 @@ header .sticky-nav {
 	position: relative;
 	width: 100%;
 	height: 60px;
-	background: #26292E;
+	background: #081124;
 	z-index: 1001;
 	
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -503,7 +506,7 @@ header #logo {
 }
 
 header #logo a {
-	background: url(../img/logo.png) no-repeat;
+	background: url(../img/2cp.png) no-repeat;
 	width: 96px;
 	height: 30px;
 	text-indent: -9999px;
@@ -543,17 +546,18 @@ nav#menu #menu-nav li:first-child {
 }
 
 nav#menu #menu-nav li a {
-	color: #FFFFFF;
+	color: #E9E9E9;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 60px;
 	display: block;
 	text-transform: uppercase;
+    font-weight: bold;
 }
 
 nav#menu #menu-nav li.current a,
 nav#menu #menu-nav li a:hover {
-	color: #DE5E60;
+	color: #3299BB;
 }
 
 
@@ -628,14 +632,14 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 .page {
-	background: #2F3238;
+	background: #E9E9E9;
 	padding: 100px 0;
 	position: relative;
 	z-index: 99;
 }
 
 .page-alternate {
-	background: #26292E;
+	background: #BDBDBD;
 	padding: 100px 0;
 	position: relative;
 	z-index: 99;
@@ -654,6 +658,7 @@ nav#menu #menu-nav li a:hover {
 .title-page .title-description {
 	font-size: 24px;
 	font-weight: 200;
+    font-weight: bold;
 	margin: 0;
 }
 
@@ -662,7 +667,7 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 .type-work {
-	color: #FFFFFF;
+	color: #424242;
 	font-size: 24px;
 	font-weight: 300;
 	margin-bottom: 30px;
@@ -683,16 +688,16 @@ nav#menu #menu-nav li a:hover {
 
 .work-nav #filters li a {
 	color: #7F8289;
-	font-size: 16px;
+	font-size: 17px;
 	display: block;	
 }
 
 .work-nav #filters li a:hover {
-	color: #FFFFFF;
+	color: #FF9900;
 }
 
 .work-nav #filters li a.selected {
-	color: #DE5E60;
+	color: #3299BB;
 }
 
 #thumbs {
@@ -752,7 +757,7 @@ nav#menu #menu-nav li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #DE5E60;
+	background: #3299BB;
 	
 	opacity: 0.80;
 	filter: alpha(opacity=80);
@@ -832,7 +837,7 @@ nav#menu #menu-nav li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #DE5E60;
+	background: #3299BB;
 	
 	opacity: 0.80;
 	filter: alpha(opacity=80);
@@ -895,7 +900,7 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 .contact-details h3 {
-	color: #FFFFFF;
+	color: #FF9900;
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 30px;
@@ -934,9 +939,10 @@ nav#menu #menu-nav li a:hover {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	
-	background: #26292E;
-    color: #FFFFFF;
-    font-size: 16px;
+	background: #BCBCBCS;
+    color: #424242;
+    font-size: 18px;
+    font-weight: bold;
     height: auto;
     padding: 15px;
 	margin: 0;
@@ -960,12 +966,13 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit {
-    background: #3C3F45;
-    color: #23262C;
+    background: #FF9900;
+    color: #E9E9E9;
     cursor: pointer;
     display: inline-block;
     font-size: 18px;
     font-weight: 500;
+    font-weight: bold;
     padding: 16px 40px;
     text-align: center;
     vertical-align: middle;
@@ -979,7 +986,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit:hover {
-    background: #DE5E60;
+    background: #3299BB;
     color: #FFFFFF;
 }
 
@@ -1100,7 +1107,7 @@ nav#menu #menu-nav li a:hover {
 
 #social ul li:hover a,
 #social ul li.active a {
-	background-color: #DE5E60;	
+	background-color: #3299BB;	
 	
 	-webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);
@@ -1149,7 +1156,7 @@ footer .credits {
 
 #back-to-top {
 	display: none;
-	background-color: #3C3F45;
+	background-color: #3299BB;
 	margin: 0;
 	position: fixed;
 	bottom: 0;
@@ -1165,7 +1172,7 @@ footer .credits {
 }
 
 #back-to-top:hover {
-	background-color:#DE5E60;
+	background-color:#3299BB;
 }
 
 #back-to-top i {
@@ -1241,7 +1248,7 @@ footer .credits {
 	margin: -50px 0 0 -50px;
 	width: 100px;
 	height: 100px;
-	background: #DE5E60;
+	background: #FF9900;
 	-webkit-border-radius: 999px;
 	-moz-border-radius: 999px;
 	border-radius: 999px;

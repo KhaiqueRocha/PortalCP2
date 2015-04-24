@@ -107,9 +107,9 @@
 	cursor: pointer;
 	z-index: 9000;
 	background-image: none;
-	background-color: #26292E;
 	
-	opacity: 0.5;
+	
+	opacity: 1;
 	
 	-webkit-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;	
 	   -moz-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
@@ -124,12 +124,12 @@
 	font-size: 22px;
 	line-height: 1em;
 	position: absolute;
-	color: #FFFFFF;
+	color: #FF9900;
 }
 
 .fancybox-close:hover {
-	opacity: 1;
-	background-color:#DE5E60;
+	opacity: 1  ;
+
 }
 
 .fancybox-nav {
@@ -195,7 +195,7 @@
 
 .fancybox-nav:hover span {
 	opacity: 1;
-	background-color:#DE5E60;
+	background-color:#FF9900;
 }
 
 .fancybox-tmp {
