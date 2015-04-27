@@ -78,9 +78,9 @@ BRUSHED.slider = function(){
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 		                                    { image : '_include/img/profile/cp2.png', thumb: '', url: '' },
-											{image : '_include/img/slider-images/image01.jpg',   thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.jpg', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.jpg', thumb : '', url : ''},
+											{image : '_include/img/slider-images/image1.png',   thumb : '', url : ''},
+											{image : '_include/img/slider-images/image2.png', thumb : '', url : ''},
+											{image : '_include/img/slider-images/image3.png', thumb : '', url : ''},
 											{image : '_include/img/slider-images/image4.png', thumb : '', url : ''}
 									],
 									
