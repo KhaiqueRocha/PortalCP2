@@ -430,7 +430,7 @@
     <div class="row">
         <div class="span9">
 
-            <form id="contact-form" class="contact-form" action="#">
+            <form id="contact-form" class="contact-form" action="_include/php/processo.php">
                 <p class="contact-name">
                     <input id="contact_name" type="text" placeholder="Nome Completo" value="" name="name" />
                 </p>
@@ -438,22 +438,22 @@
                     <input id="contact_email" type="text" placeholder="Email" value="" name="email" />
                 </p>
                 <p class="contact-message">
-                    <textarea id="contact_message" placeholder="Telefone" name="message" rows="1" cols="40"></textarea>
+                    <textarea id="contact_message" placeholder="Telefone" name="telefone" rows="1" cols="40"></textarea>
                 </p>
                 <p class="contact-message">
-                    <textarea id="contact_message" placeholder="Atividades extra curriculares" name="message" rows="3" cols="40"></textarea>
+                    <textarea id="contact_message" placeholder="Atividades extra curriculares" name="atividade" rows="3" cols="40"></textarea>
                 </p>
                 <p class="contact-message">
-                    <textarea id="contact_message" placeholder="Como conheceu a CP2?" name="message" rows="3" cols="40"></textarea>
+                    <textarea id="contact_message" placeholder="Como conheceu a CP2?" name="cp2" rows="3" cols="40"></textarea>
                 </p>
                 <p class="contact-message">
-                    <textarea id="contact_message" placeholder="Conte-nos um pouco sobre a CP2" name="message" rows="5" cols="40"></textarea>
+                    <textarea id="contact_message" placeholder="Conte-nos um pouco sobre a CP2" name="sobre" rows="5" cols="40"></textarea>
                 </p>
                 <p class="contact-message">
-                    <textarea id="contact_message" placeholder="Qual núcleo gostaria de fazer parte e porquê?" name="message" rows="5" cols="40"></textarea>
+                    <textarea id="contact_message" placeholder="Qual núcleo gostaria de fazer parte? Porquê?" name="nucleo" rows="5" cols="40"></textarea>
                 </p>
                 <p class="contact-submit">
-                    <a id="contact-submit" class="submit" href="#">Enviar</a>
+                    <a id="contact-submit" class="submit" href="#processo">Inscrever</a>
                 </p>
 
                 <div id="response">
@@ -544,7 +544,7 @@
     <div class="row">
     	<div class="span9">
         
-        	<form id="contact-form" class="contact-form" action="#">
+        	<form id="contact-form" class="contact-form" method="post" action="_include/php/contact.php">
             	<p class="contact-name">
             		<input id="contact_name" type="text" placeholder="Nome Completo" value="" name="name" />
                 </p>
@@ -559,7 +559,7 @@
 
                 </p>
                 <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="#">Enviar</a>
+                	<a id="contact-submit" class="submit" href="#contact">Enviar</a>
                 </p>
                 
                 <div id="response">
