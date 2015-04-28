@@ -945,7 +945,7 @@ nav#menu #menu-nav li a:hover {
     font-weight: bold;
     height: auto;
     padding: 15px;
-	margin: 0;
+	/*margin: 0;*/
 	
     resize: none;
 }
