@@ -414,16 +414,53 @@
 
 <!-- Seção de Processo seletivo -->
 <div id="processo" class="page-alternate">
-    <div class="container">
-        <!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">Processo Seletivo</h2>
-                    <h3 class="title-description">Faça parte da nossa família</h3>
-                    <a class="button" href="http://goo.gl/forms/ldsA2mXXy8" target="_blank">Inscrições</a>
-                </div>
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Processo Seletivo</h2>
+                <h3 class="title-description">Faça parte da nossa família</h3>
             </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+
+    <!-- Formulário processo seletivo -->
+    <div class="row">
+        <div class="span9">
+
+            <form id="contact-form" class="contact-form" action="#">
+                <p class="contact-name">
+                    <input id="contact_name" type="text" placeholder="Nome Completo" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                    <input id="contact_email" type="text" placeholder="Email" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                    <textarea id="contact_message" placeholder="Telefone" name="message" rows="1" cols="40"></textarea>
+                </p>
+                <p class="contact-message">
+                    <textarea id="contact_message" placeholder="Atividades extra curriculares" name="message" rows="3" cols="40"></textarea>
+                </p>
+                <p class="contact-message">
+                    <textarea id="contact_message" placeholder="Como conheceu a CP2?" name="message" rows="3" cols="40"></textarea>
+                </p>
+                <p class="contact-message">
+                    <textarea id="contact_message" placeholder="Conte-nos um pouco sobre a CP2" name="message" rows="5" cols="40"></textarea>
+                </p>
+                <p class="contact-message">
+                    <textarea id="contact_message" placeholder="Qual núcleo gostaria de fazer parte e porquê?" name="message" rows="5" cols="40"></textarea>
+                </p>
+                <p class="contact-submit">
+                    <a id="contact-submit" class="submit" href="#">Enviar</a>
+                </p>
+
+                <div id="response">
+
+                </div>
+            </form>
+
         </div>
         <!-- End Title Page -->
 </div>
@@ -509,10 +546,7 @@
         
         	<form id="contact-form" class="contact-form" action="#">
             	<p class="contact-name">
-
             		<input id="contact_name" type="text" placeholder="Nome Completo" value="" name="name" />
-
-            		<input id="contact_name" type="text" placeholder="Nome" value="" name="name" />
                 </p>
                 <p class="contact-email">
                 	<input id="contact_email" type="text" placeholder="Email" value="" name="email" />
