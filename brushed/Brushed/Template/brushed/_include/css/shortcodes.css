@@ -88,8 +88,8 @@
 	position: relative;
   	display: block;
   	padding: 15px;
-	background:#3C3F45;
-	color: #23262C;
+	background:#FF9900;
+	color: #ffffff;
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -107,17 +107,17 @@
 
 .accordion-heading:hover .accordion-toggle,
 .accordion-heading:hover .accordion-toggle.inactive {
-	background:#DE5E60;
+	background:#3299BB;
 	color:#FFFFFF;
 }
 
 .accordion-heading .accordion-toggle.active {
-	background:#DE5E60;
+	background:#3299BB;
 	color:#FFFFFF;
 }
 
 .accordion-heading .accordion-toggle.inactive {
-	background:#3C3F45;
+	background:#FF9900;
 }
 
 .accordion-heading.accordionize .accordion-toggle span,
@@ -233,6 +233,9 @@
 
 .alert-info {
   	background-color: #5A9AA8;
+    margin-bottom: 70px;
+    margin-left: 350px;
+    text-align: center;
 }
 
 
