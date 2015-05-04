@@ -1,0 +1,138 @@
+<!-- Site Criado pelo Núcleo de Engenharia(NE) da Cp2eJr. Template Brushed 2013 - Adaptado de Alessio Atzeni -->
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="pt-BR"> <!--<![endif]-->
+<head>
+
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>CP2 | Formulário de Inscrição - AutoCAD</title>   
+
+	<meta name="description" content="Cp2eJr | Consultoria e Projetos em engenharia" />
+
+	<!-- Mobile Specifics -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true"/>
+	<meta name="MobileOptimized" content="320"/>   
+
+	<!-- Mobile Internet Explorer ClearType Technology -->
+	<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+	<!-- Bootstrap -->
+	<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Main Style -->
+	<link href="_include/css/main.css" rel="stylesheet">
+
+	<!-- Supersized -->
+	<link href="_include/css/supersized.css" rel="stylesheet">
+	<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+	<!-- FancyBox -->
+	<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+	<!-- Font Icons -->
+	<link href="_include/css/fonts.css" rel="stylesheet">
+
+	<!-- Shortcodes -->
+	<link href="_include/css/shortcodes.css" rel="stylesheet">
+
+	<!-- Responsive -->
+	<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="_include/css/responsive.css" rel="stylesheet">
+
+	<!-- Supersized -->
+	<link href="_include/css/supersized.css" rel="stylesheet">
+	<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+	<!-- Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="#">
+
+	<link rel="apple-touch-icon" href="#">
+	<link rel="apple-touch-icon" sizes="114x114" href="#">
+	<link rel="apple-touch-icon" sizes="72x72" href="#">
+	<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+</head>
+
+<body>
+<div class="container">
+
+	<!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Ficha de Inscrição Curso AutoCAD 2D</h2>
+                <h3 class="title-description">X horas de curso por apenas R$ X,xx</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+
+	<div class="row">
+    	<div class="span9">
+        
+        	<form id="contact-form" class="contact-form" action="_include\php\formAutoCAD.php">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Nome" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Número do RG" value="" name="numeroRG" />
+                </p>
+				<p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Endereço" value="" name="endereco" />
+                </p>
+				<p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Bairro" value="" name="bairro" />
+                </p>
+				<p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Cidade" value="" name="cidade" />
+                </p>
+				<p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Telefone para contato" value="" name="telefone" />
+                </p>
+				<p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Email" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="Observações (se houver)" name="observacoes"  cols="40"></textarea>
+                </p>
+                <!--
+				<p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="http://google.com">Inscrever-se</a>
+                </p>
+				-->
+				</form>
+				
+				
+				
+				
+				<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+				<form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
+				<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+				<input type="hidden" name="code" value="6D2B7994EAEA0D3EE498FF85F064A302" />
+				<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-laranja-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+				</form>
+				<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+                
+				
+				
+				
+				
+                <div id="response">
+                
+                </div>
+            
+         
+        </div>
+	</div>
+</div>
+</body>
