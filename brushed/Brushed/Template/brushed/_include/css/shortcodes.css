@@ -224,6 +224,9 @@
 
 .alert-success {
   	background-color: #1F7F5C;
+    margin-left: 300px;
+    margin-right: -350px;
+    text-align: center;
 }
 
 .alert-danger,
