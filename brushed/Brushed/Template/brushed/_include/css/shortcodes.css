@@ -70,7 +70,11 @@
 
 .accordion {
   	margin-bottom: 20px;
-    margin-left: 300px;
+}
+
+.accordion-align-center {
+	margin-bottom: 20px;
+	margin-left: 300px;
     margin-right: -350px;
 }
 
