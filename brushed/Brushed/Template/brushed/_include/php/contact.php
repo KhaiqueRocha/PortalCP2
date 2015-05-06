@@ -8,8 +8,9 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'your@yourdomain.com'; // Your Email
+$admin_email = 'contato@cp2ejr.com.br'; // Your Email
 $message_min_length = 5; // Min Message Length
+
 
 
 class Contact_Form{
@@ -17,7 +18,7 @@ class Contact_Form{
 		
 		$this->name = stripslashes($details['name']);
 		$this->email = trim($details['email']);
-		$this->subject = 'Contact from Your Website'; // Subject 
+		$this->subject = 'Contato a partir do site'; // Subject 
 		$this->message = stripslashes($details['message']);
 	
 		$this->email_admin = $email_admin;
@@ -45,28 +46,28 @@ class Contact_Form{
 		// Check name
 		if(!$this->name)
 		{
-			$this->response_html .= '<p>Please enter your name</p>';
+			$this->response_html .= '<p>Por favor, preencha NOME!</p>';
 			$this->response_status = 0;
 		}
 
 		// Check email
 		if(!$this->email)
 		{
-			$this->response_html .= '<p>Please enter an e-mail address</p>';
+			$this->response_html .= '<p>Por favor, preencha EMAIL!</p>';
 			$this->response_status = 0;
 		}
 		
 		// Check valid email
 		if($this->email && !$this->validateEmail())
 		{
-			$this->response_html .= '<p>Please enter a valid e-mail address</p>';
+			$this->response_html .= '<p>Por favor, entre com um EMAIL válido!</p>';
 			$this->response_status = 0;
 		}
 		
 		// Check message length
 		if(!$this->message || strlen($this->message) < $this->message_min_length)
 		{
-			$this->response_html .= '<p>Please enter your message. It should have at least '.$this->message_min_length.' characters</p>';
+			$this->response_html .= '<p>Sua mensagens deve conter ao menos '.$this->message_min_length.' caracteres!</p>';
 			$this->response_status = 0;
 		}
 	}
@@ -81,7 +82,7 @@ class Contact_Form{
 		if($mail)
 		{
 			$this->response_status = 1;
-			$this->response_html = '<p>Thank You!</p>';
+			$this->response_html = '<p>Obrigado!</p>';
 		}
 	}
 
@@ -93,14 +94,13 @@ class Contact_Form{
 			$this->sendEmail();
 		}
 
-		$response = array();
-		$response['status'] = $this->response_status;	
-		$response['html'] = $this->response_html;
+		$response = array("status" => $this->response_status, "html" => $this->response_html);
+//		$response['status'] = $this->response_status;	
+//		$response['html'] = $this->response_html;
 		
 		echo json_encode($response);
 	}
 }
-
 
 $contact_form = new Contact_Form($_POST, $admin_email, $message_min_length);
 $contact_form->sendRequest();
