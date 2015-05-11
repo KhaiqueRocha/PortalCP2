@@ -110,11 +110,13 @@ BRUSHED.filter = function (){
 	if($('#projects').length > 0){		
 		var $container = $('#projects');
 		
-		$container.isotope({
-		  // options
-		  animationEngine: 'best-available',
-		  itemSelector : '.item-thumbs',
-		  layoutMode : 'fitRows'
+		$container.imagesLoaded(function() {
+		   $container.isotope({
+			// options
+			animationEngine: 'best-available',
+			itemSelector : '.item-thumbs',
+			layoutMode : 'fitRows'
+		   });
 		});
 	
 		
