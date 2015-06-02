@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Cursos CP2</title>
+
+<link type="text/css" rel="stylesheet" href="estilo.css">
+<script src="_include/js/formulario.js"></script>
+</head>
+
+<body>
+
+	<header class="body">
+    	
+        <h1>Curso de Java Básico</h1>
+        
+    </header>
+	
+    <section class="body">
+    
+    	    
+        <form method="post" action="enviar.php">
+        
+            <label>Nome</label>
+            <input id="nomeid" name="nome" required="required"/>
+            
+			<label>Número do RG:</label>
+            <input id="rgid" name="rg" required="required"/>
+			
+			<label>Endereço:</label>
+            <input id ="enderecoid" name="endereco" required="required"/>
+			
+			<label>Bairro:</label>
+            <input id="bairroid" name="bairro" required="required"/>
+			
+			<label>Cidade:</label>
+            <input id="cidadeid" name="cidade" required="required"/>
+			
+			<label>Tel. Contato:</label>
+            <input id="telefoneid" name="telefone" required="required"/>
+				
+			<label>Email:</label>
+            <input id="emailid" name="email" required="required"/>
+            
+            <!--<label>Mensagem</label>
+            <textarea name="message" placeholder="O que deseja falar?"></textarea>-->
+            
+            <!--<label>*Quanto é 2+2? (Anti-spam)</label>
+            <input name="human" placeholder="Responda aqui" required="required"/>-->
+            
+            <input id="submit" name="submit" onclick="Enviar();" type="submit" value="Submit">
+        
+        </form>
+        
+    </section>
+    
+    <footer class="body">
+    	<a href="http://www.cp2ejr.com.br"><img src="_include\img\2cp.png" alt="CP2"></a>
+    </footer>
+
+</body>
+</html>
+
