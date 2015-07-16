@@ -8,7 +8,7 @@
     $email = $_POST['email'];
     //$message = $_POST['message'];
     $from = 'De: CP2eJr'; 
-    $to = 'rayana.noronha@cp2ejr.com.br'; 
+    $to = 'danielcerqueira@gec.inatel.br'; 
     $subject = 'Curso de Java';
     //$human = $_POST['human'];
 			
