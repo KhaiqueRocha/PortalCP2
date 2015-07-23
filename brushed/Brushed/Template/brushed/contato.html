@@ -4,24 +4,24 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<title>Cursos CP2</title>
+<title>Processo Seletivo CP2eJr</title>
 
 <link type="text/css" rel="stylesheet" href="estilo.css">
-<script src="_include/js/formulario.js"></script>
+<!--<script src="_include/js/formulario.js"></script>-->
 </head>
 
 <body>
 
 	<header class="body">
     	
-        <h1>Curso de Java Básico</h1>
+        <h1>Processo Seletivo CP2eJr</h1>
         
     </header>
 	
     <section class="body">
     
     	    
-        <form method="post" action="enviar.php">
+        <form method="post" action="enviar.php" enctype="multipart/form-data">
         
             <label>Nome</label>
             <input id="nomeid" name="nome" required="required"/>
@@ -44,6 +44,18 @@
 			<label>Email:</label>
             <input id="emailid" name="email" required="required"/>
             
+			<label>Núcleos:</label>
+			<select required id = "nucleosid" name="nucleos">
+				<option value="">Selecione uma opcao...</option>
+				<option value="NAI">Núcleo de Assuntos Internos</option>
+				<option value="NE">Núcleo de Engenharia</option>
+				<option value="NGCT">Núcleo de Gestão de Conhecimento e Treinamentos</option>
+				<option value="NPSP">Núcleo de Projetos Sociais e Promoções</option>
+			</select>
+			
+			<label> Currículo: </label>
+			<input id="fileToUpload" name="uploadead_file" type="file"/>
+			
             <!--<label>Mensagem</label>
             <textarea name="message" placeholder="O que deseja falar?"></textarea>-->
             

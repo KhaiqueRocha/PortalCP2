@@ -6,8 +6,8 @@ function Enviar(){
 	var cidade = document.getElementById("cidadeid");
 	var telefone = document.getElementById("telefoneid");
 	var email = document.getElementById("emailid");
-	
-	if(nome.value !="" && rg.value !="" && endereco.value !="" && bairro.value !="" && cidade.value !="" && telefone.value !="" && email.value !=""){
+	var nucleosid = document.getElementById("nucleosid");
+	if(nucleosid.value !="" && nome.value !="" && rg.value !="" && endereco.value !="" && bairro.value !="" && cidade.value !="" && telefone.value !="" && email.value !=""){
 		alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram salvos com sucesso!\nDentro de instantes entraremos em contato no e-mail para confirmação da inscrição!');
 	}
 }
