@@ -26,25 +26,25 @@
             <label>Nome</label>
             <input id="nomeid" name="nome" required="required"/>
             
-			<label>Número do RG:</label>
-            <input id="rgid" name="rg" required="required"/>
+			<label>Período:</label>
+            <input id="periodoid" name="periodo" required="required"/>
 			
-			<label>Endereço:</label>
-            <input id ="enderecoid" name="endereco" required="required"/>
+			<label>Curso:</label>
+            <input id ="cursoid" name="curso" required="required"/>
 			
-			<label>Bairro:</label>
+		<!--<label>Bairro:</label>
             <input id="bairroid" name="bairro" required="required"/>
 			
 			<label>Cidade:</label>
-            <input id="cidadeid" name="cidade" required="required"/>
+            <input id="cidadeid" name="cidade" required="required"/> -->
 			
 			<label>Tel. Contato:</label>
             <input id="telefoneid" name="telefone" required="required"/>
 				
 			<label>Email:</label>
-            <input id="emailid" name="email" required="required"/>
+            <input id="emailid" type="email" name="email" required="required"/>
             
-			<label>Núcleos:</label>
+			<label>Núcleo Desejado:</label>
 			<select required id = "nucleosid" name="nucleos">
 				<option value="">Selecione uma opcao...</option>
 				<option value="NAI">Núcleo de Assuntos Internos</option>
@@ -53,11 +53,19 @@
 				<option value="NPSP">Núcleo de Projetos Sociais e Promoções</option>
 			</select>
 			
-			<label> Currículo: </label>
-			<input id="fileToUpload" name="uploadead_file" type="file"/>
+			<label>Por que deseja entrar nesse núcleo?</label>
+            <textarea required id="nucleos2id" name="nucleos2"></textarea>
 			
-            <!--<label>Mensagem</label>
-            <textarea name="message" placeholder="O que deseja falar?"></textarea>-->
+			<label> Currículo Atual: </label>
+			<input required name="attach1" type="file"/>
+			
+			<label> Horário do Semestre: </label>
+			<input required name="attach2" type="file"/>
+			
+			<label>Quais atividades extracurriculares você realiza no semestre?</label>
+            <textarea required id="atividades1id" name="atividades1"></textarea>
+			
+            
             
             <!--<label>*Quanto é 2+2? (Anti-spam)</label>
             <input name="human" placeholder="Responda aqui" required="required"/>-->
