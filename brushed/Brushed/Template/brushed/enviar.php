@@ -8,12 +8,13 @@
 	$nucleos = $_POST['nucleos'];
 	$nucleos2 = $_POST['nucleos2'];
 	$atividades1 = $_POST['atividades1'];
+	$processo1 = $_POST['processo1'];
 	
 	//Dados para envio do email com o formulario preenchido
     $from = 'De: CP2eJr'; 
-    $to = 'danielcerqueira@gec.inatel.br'; 
+    $to = 'ngct@cp2ejr.com.br'; 
     $subject = 'Processo Seletivo - CP2eJr';
-	$message = "Dados Cadastrados através do Formulário do Processo Seletivo da CP2eJr\nNome: $nome\nPeríodo: $periodo\nCurso: $curso\nTel. Contato: $telefone\nE-Mail: $email\nNúcleo: $nucleos\nPor que deseja entrar nesse núcleo: $nucleos2\nAtividades Extracurriculares do Semestre: $atividades1\n";	
+	$message = "Dados Cadastrados através do Formulário do Processo Seletivo da CP2eJr\nNome: $nome\nPeríodo: $periodo\nCurso: $curso\nTel. Contato: $telefone\nE-Mail: $email\nNúcleo: $nucleos\nPor que deseja entrar nesse núcleo: $nucleos2\nAtividades Extracurriculares do Semestre: $atividades1\nComo você ficou sabendo do Processo Seletivo da CP2eJr: $processo1\n\nFormulário Processo Seletivo CP2eJr 2º Semestre de 2015 - Criado por Daniel Cerqueira Jeronymo\n";	
 	
 	if(isset($_FILES) && (bool) $_FILES){
 		//Formatos Possiveis dos anexos
@@ -27,7 +28,7 @@
 			$path_parts = pathinfo($file_name);
 			$ext = $path_parts['extension'];
 			if(!in_array($ext,$allowedExtensions)) {
-				die("File $file_name has the extensions $ext which is not allowed");
+				die("O arquivo $file_name possui a extensao $ext que nao e suportada, por favor mude o formato do arquivo e tente novamente");
 			}
 			array_push($files,$file);
 		}
@@ -60,7 +61,7 @@
 		}
 	}	
     if ($_POST['submit']) {
-		if ($nome != '' && $periodo != '' && $curso != '' && $telefone != '' && $email != '' && $nucleos != '' && $nucleos2 != '' && $atividades1 != '') {				 
+		if ($nome != '' && $periodo != '' && $curso != '' && $telefone != '' && $email != '' && $nucleos != '' && $nucleos2 != '' && $atividades1 != '' && $processo1 != '') {				 
 			if (mail ($to, $subject,$message, $headers)) { 
 				echo("<script type='text/javascript'> alert('Cadastro do Processo Seletivo da CP2eJr realizado com sucesso! Verifique seu e-mail para acompanhar o resultado!'); location.href='http://www.cp2ejr.com.br';</script>");
 			} else { 
