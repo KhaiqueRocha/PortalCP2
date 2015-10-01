@@ -5,20 +5,17 @@
 	$curso = $_POST['curso'];
 	$telefone = $_POST['telefone'];
     $email = $_POST['email'];
-	$nucleos = $_POST['nucleos'];
-	$nucleos2 = $_POST['nucleos2'];
-	$atividades1 = $_POST['atividades1'];
-	$processo1 = $_POST['processo1'];
+	
 	
 	//Dados para envio do email com o formulario preenchido
     $from = 'De: CP2eJr'; 
-    $to = 'ngct@cp2ejr.com.br'; 
-    $subject = 'Processo Seletivo - CP2eJr';
-	$message = "Dados Cadastrados através do Formulário do Processo Seletivo da CP2eJr\nNome: $nome\nPeríodo: $periodo\nCurso: $curso\nTel. Contato: $telefone\nE-Mail: $email\nNúcleo: $nucleos\nPor que deseja entrar nesse núcleo: $nucleos2\nAtividades Extracurriculares do Semestre: $atividades1\nComo você ficou sabendo do Processo Seletivo da CP2eJr: $processo1\n\nFormulário Processo Seletivo CP2eJr 2º Semestre de 2015 - Criado por Daniel Cerqueira Jeronymo\n";	
+    $to = 'pedro.miranda@get.inatel.br'; 
+    $subject = 'Workshop Fetin';
+	$message = "Dados Inscrições para o Workshop da Fetin\nNome: $nome\nPeríodo: $periodo\nCurso: $curso\nTel. Contato: $telefone\nE-Mail: $email\n\nInscrIção Workshop Fetin\n";	
 	
-	if(isset($_FILES) && (bool) $_FILES){
+	// if(isset($_FILES) && (bool) $_FILES){
 		//Formatos Possiveis dos anexos
-		$allowedExtensions = array("pdf","doc","docx","gif","jpeg","jpg","png","rtf","txt");
+		// $allowedExtensions = array("pdf","doc","docx","gif","jpeg","jpg","png","rtf","txt");
 	
 	$files = array();
 		foreach($_FILES as $name=>$file) {
@@ -59,11 +56,11 @@
 			"Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
 			$message .= "--{$mime_boundary}\n";
 		}
-	}	
+		
     if ($_POST['submit']) {
-		if ($nome != '' && $periodo != '' && $curso != '' && $telefone != '' && $email != '' && $nucleos != '' && $nucleos2 != '' && $atividades1 != '' && $processo1 != '') {				 
+		if ($nome != '' && $periodo != '' && $curso != '' && $telefone != '' && $email != '' ) {				 
 			if (mail ($to, $subject,$message, $headers)) { 
-				echo("<script type='text/javascript'> alert('Cadastro do Processo Seletivo da CP2eJr realizado com sucesso! Verifique seu e-mail para acompanhar o resultado!'); location.href='http://www.cp2ejr.com.br';</script>");
+				echo("<script type='text/javascript'> alert('Cadastro para  o Workshop da CP2eJr realizado com sucesso.'); location.href='http://www.cp2ejr.com.br';</script>");
 			} else { 
 				echo '<p>Algo deu errado, volte e tente novamente!</p>'; 
 			} 
